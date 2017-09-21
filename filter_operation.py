@@ -136,17 +136,3 @@ def histo_equal_color(img, rows, cols):
 
     cv2.imshow('Histogram equalized', img_output)
     cv2.waitKey(0)
-#img = cv2.imread('./Images/samsung_sd.jpg', cv2.IMREAD_GRAYSCALE)
-#rows, cols = img.shape
-#edge_detector(img, rows, cols)
-#blur(img, rows, cols)
-
-img = cv2.imread('./Images/snow.jpg', 0)
-rows, cols = img.shape[:2]
-cv2.imshow('Original', img)
-#sharpening(img, rows, cols)
-#motion_blur(img, rows, cols)
-#embossing(img, rows, cols)
-#morphology(img, rows, cols)
-#vignette(img, rows, cols)
-histo_equal_color(img, rows, cols)
